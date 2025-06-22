@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdiSam Consulting - Move Fast. Scale Smart. Win with AI.</title>
+    <meta name="description" content="AI advisory startup helping businesses achieve rapid ROI from AI investments. Get real business value from AI in 90 days.">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">
+                    <span class="logo-text">AdiSam</span>
+                    <span class="logo-accent">Consulting</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#case-studies" class="nav__link">Success Stories</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="nav__close-icon">×</i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <a href="#contact" class="btn btn--primary">Get Started</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Move Fast. <span class="text-gradient">Scale Smart.</span><br>
+                        Win with AI.
+                    </h1>
+                    <p class="hero__description">
+                        Transform your business with AI that delivers real results in 90 days. 
+                        Join 50+ companies achieving 300% ROI with our proven methodology.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn btn--primary btn--large">
+                            Get Your AI Strategy
+                            <span class="btn__icon">→</span>
+                        </a>
+                        <a href="#case-studies" class="btn btn--secondary btn--large">
+                            See Success Stories
+                        </a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <span class="stat__number" data-target="90">0</span>
+                            <span class="stat__label">Days to ROI</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-target="300">0</span>
+                            <span class="stat__suffix">%</span>
+                            <span class="stat__label">Average ROI</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-target="50">0</span>
+                            <span class="stat__suffix">+</span>
+                            <span class="stat__label">Success Stories</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__graphic">
+                        <div class="floating-elements">
+                            <div class="floating-element floating-element--1"></div>
+                            <div class="floating-element floating-element--2"></div>
+                            <div class="floating-element floating-element--3"></div>
+                            <div class="floating-element floating-element--4"></div>
+                        </div>
+                        <div class="neural-network">
+                            <svg viewBox="0 0 400 300" class="neural-svg">
+                                <defs>
+                                    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#3182ce;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Neural network connections -->
+                                <g class="connections">
+                                    <line x1="50" y1="75" x2="150" y2="50" class="connection" />
+                                    <line x1="50" y1="75" x2="150" y2="100" class="connection" />
+                                    <line x1="50" y1="75" x2="150" y2="150" class="connection" />
+                                    <line x1="50" y1="150" x2="150" y2="50" class="connection" />
+                                    <line x1="50" y1="150" x2="150" y2="100" class="connection" />
+                                    <line x1="50" y1="150" x2="150" y2="150" class="connection" />
+                                    <line x1="50" y1="225" x2="150" y2="100" class="connection" />
+                                    <line x1="50" y1="225" x2="150" y2="150" class="connection" />
+                                    
+                                    <line x1="150" y1="50" x2="250" y2="75" class="connection" />
+                                    <line x1="150" y1="100" x2="250" y2="75" class="connection" />
+                                    <line x1="150" y1="150" x2="250" y2="75" class="connection" />
+                                    <line x1="150" y1="50" x2="250" y2="150" class="connection" />
+                                    <line x1="150" y1="100" x2="250" y2="150" class="connection" />
+                                    <line x1="150" y1="150" x2="250" y2="150" class="connection" />
+                                    <line x1="150" y1="150" x2="250" y2="225" class="connection" />
+                                    
+                                    <line x1="250" y1="75" x2="350" y2="112" class="connection" />
+                                    <line x1="250" y1="150" x2="350" y2="112" class="connection" />
+                                    <line x1="250" y1="225" x2="350" y2="112" class="connection" />
+                                </g>
+                                <!-- Neural network nodes -->
+                                <g class="nodes">
+                                    <circle cx="50" cy="75" r="8" class="node node--input" />
+                                    <circle cx="50" cy="150" r="8" class="node node--input" />
+                                    <circle cx="50" cy="225" r="8" class="node node--input" />
+                                    
+                                    <circle cx="150" cy="50" r="8" class="node node--hidden" />
+                                    <circle cx="150" cy="100" r="8" class="node node--hidden" />
+                                    <circle cx="150" cy="150" r="8" class="node node--hidden" />
+                                    
+                                    <circle cx="250" cy="75" r="8" class="node node--hidden" />
+                                    <circle cx="250" cy="150" r="8" class="node node--hidden" />
+                                    <circle cx="250" cy="225" r="8" class="node node--hidden" />
+                                    
+                                    <circle cx="350" cy="112" r="8" class="node node--output" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__background">
+                <div class="gradient-orb gradient-orb--1"></div>
+                <div class="gradient-orb gradient-orb--2"></div>
+                <div class="gradient-orb gradient-orb--3"></div>
+            </div>
+        </section>
+
+        <!-- Value Proposition Section -->
+        <section class="value-prop section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Why Businesses Choose AdiSam</h2>
+                    <p class="section__description">
+                        We don't just implement AI—we deliver measurable business outcomes that drive growth.
+                    </p>
+                </div>
+                
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Lightning Fast</h3>
+                        <div class="value-card__metric">90 Days to ROI</div>
+                        <p class="value-card__description">
+                            Our proven methodology gets you from strategy to measurable results in just 90 days, 
+                            not the industry average of 12+ months.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Proven Results</h3>
+                        <div class="value-card__metric">300% Average ROI</div>
+                        <p class="value-card__description">
+                            Our clients see an average 300% return on investment in their first year, 
+                            with some achieving 500%+ returns.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Battle-Tested</h3>
+                        <div class="value-card__metric">50+ Success Stories</div>
+                        <p class="value-card__description">
+                            From startups to Fortune 500 companies, we've successfully implemented 
+                            AI solutions across every major industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Our AI Advisory Services</h2>
+                    <p class="section__description">
+                        End-to-end AI implementation that transforms your business operations and drives measurable growth.
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 0-8-3-8-8s3-8 8-8 8 3 8 8-3 8-8 8z"/>
+                                    <path d="M21 21l-4.35-4.35"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">AI Strategy & Roadmapping</h3>
+                        </div>
+                        <ul class="service-card__benefits">
+                            <li>Custom AI strategy aligned with business goals</li>
+                            <li>ROI-focused implementation roadmap</li>
+                            <li>Technology stack recommendations</li>
+                            <li>Risk assessment and mitigation planning</li>
+                        </ul>
+                        <div class="service-card__outcome">
+                            <strong>Outcome:</strong> Clear 90-day action plan with projected ROI
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">Implementation & Integration</h3>
+                        </div>
+                        <ul class="service-card__benefits">
+                            <li>Seamless integration with existing systems</li>
+                            <li>Custom AI model development and training</li>
+                            <li>API development and data pipeline setup</li>
+                            <li>Quality assurance and testing protocols</li>
+                        </ul>
+                        <div class="service-card__outcome">
+                            <strong>Outcome:</strong> Production-ready AI systems delivering immediate value
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">ROI Optimization</h3>
+                        </div>
+                        <ul class="service-card__benefits">
+                            <li>Performance monitoring and analytics</li>
+                            <li>Continuous model improvement</li>
+                            <li>Cost optimization strategies</li>
+                            <li>Scalability planning and execution</li>
+                        </ul>
+                        <div class="service-card__outcome">
+                            <strong>Outcome:</strong> Sustained 300%+ ROI with ongoing improvements
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">Team Training & Change Management</h3>
+                        </div>
+                        <ul class="service-card__benefits">
+                            <li>Comprehensive AI literacy training</li>
+                            <li>Change management best practices</li>
+                            <li>Ongoing support and mentorship</li>
+                            <li>Internal capability building</li>
+                        </ul>
+                        <div class="service-card__outcome">
+                            <strong>Outcome:</strong> Self-sufficient teams driving continuous AI innovation
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <h2 class="section__title">Why AdiSam Consulting?</h2>
+                        <p class="about__description">
+                            We're not just another AI consultancy. We're business transformation experts who happen to use AI as our primary tool. 
+                            Our unique approach combines deep technical expertise with proven business strategy to deliver results that matter.
+                        </p>
+                        
+                        <div class="about__differentiators">
+                            <div class="differentiator">
+                                <h4 class="differentiator__title">Proven Methodology</h4>
+                                <p class="differentiator__text">
+                                    Our proprietary "AI-First Business Transformation" framework has been refined through 50+ successful implementations.
+                                </p>
+                            </div>
+                            
+                            <div class="differentiator">
+                                <h4 class="differentiator__title">Industry Expertise</h4>
+                                <p class="differentiator__text">
+                                    Deep domain knowledge across healthcare, finance, retail, manufacturing, and technology sectors.
+                                </p>
+                            </div>
+                            
+                            <div class="differentiator">
+                                <h4 class="differentiator__title">Rapid Implementation</h4>
+                                <p class="differentiator__text">
+                                    While others take 12+ months, we deliver measurable results in 90 days through our accelerated approach.
+                                </p>
+                            </div>
+                            
+                            <div class="differentiator">
+                                <h4 class="differentiator__title">Ongoing Partnership</h4>
+                                <p class="differentiator__text">
+                                    We don't just implement and leave. We partner with you for long-term success and continuous optimization.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__visual">
+                        <div class="about__stats">
+                            <div class="about__stat">
+                                <span class="about__stat-number">50+</span>
+                                <span class="about__stat-label">Successful Projects</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number">300%</span>
+                                <span class="about__stat-label">Average ROI</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number">90</span>
+                                <span class="about__stat-label">Days to Results</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number">100%</span>
+                                <span class="about__stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="case-studies section" id="case-studies">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Success Stories</h2>
+                    <p class="section__description">
+                        Real businesses, real results. See how we've helped companies transform with AI.
+                    </p>
+                </div>
+                
+                <div class="case-studies__carousel">
+                    <div class="case-study-card">
+                        <div class="case-study__header">
+                            <div class="case-study__company">Healthcare SaaS Startup</div>
+                            <div class="case-study__industry">Healthcare Technology</div>
+                        </div>
+                        <h3 class="case-study__title">AI-Powered Patient Diagnosis System</h3>
+                        <div class="case-study__challenge">
+                            <h4>Challenge:</h4>
+                            <p>Manual patient data analysis was taking 4+ hours per case, limiting scalability and increasing costs.</p>
+                        </div>
+                        <div class="case-study__solution">
+                            <h4>Solution:</h4>
+                            <p>Implemented ML-powered diagnostic assistant with natural language processing for medical records analysis.</p>
+                        </div>
+                        <div class="case-study__results">
+                            <h4>Results:</h4>
+                            <div class="results-grid">
+                                <div class="result">
+                                    <span class="result__number">85%</span>
+                                    <span class="result__label">Time Reduction</span>
+                                </div>
+                                <div class="result">
+                                    <span class="result__number">400%</span>
+                                    <span class="result__label">ROI in Year 1</span>
+                                </div>
+                                <div class="result">
+                                    <span class="result__number">95%</span>
+                                    <span class="result__label">Accuracy Rate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study__header">
+                            <div class="case-study__company">E-commerce Platform</div>
+                            <div class="case-study__industry">Retail Technology</div>
+                        </div>
+                        <h3 class="case-study__title">Intelligent Inventory Management</h3>
+                        <div class="case-study__challenge">
+                            <h4>Challenge:</h4>
+                            <p>$2M in lost revenue annually due to stockouts and overstock situations across 500+ SKUs.</p>
+                        </div>
+                        <div class="case-study__solution">
+                            <h4>Solution:</h4>
+                            <p>Deployed predictive analytics system with demand forecasting and automated reordering.</p>
+                        </div>
+                        <div class="case-study__results">
+                            <h4>Results:</h4>
+                            <div class="results-grid">
+                                <div class="result">
+                                    <span class="result__number">60%</span>
+                                    <span class="result__label">Stockout Reduction</span>
+                                </div>
+                                <div class="result">
+                                    <span class="result__number">$1.2M</span>
+                                    <span class="result__label">Annual Savings</span>
+                                </div>
+                                <div class="result">
+                                    <span class="result__number">25%</span>
+                                    <span class="result__label">Inventory Efficiency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study__header">
+                            <div class="case-study__company">Manufacturing Company</div>
+                            <div class="case-study__industry">Industrial Manufacturing</div>
+                        </div>
+                        <h3 class="case-study__title">Predictive Maintenance System</h3>
+                        <div class="case-study__challenge">
+                            <h4>Challenge:</h4>
+                            <p>Unexpected equipment failures causing $500K monthly in downtime and emergency repairs.</p>
+                        </div>
+                        <div class="case-study__solution">
+                            <h4>Solution:</h4>
+                            <p>Implemented IoT sensors with ML algorithms for predictive maintenance and failure prevention.</p>
+                        </div>
+                        <div class="case-study__results">
+                            <h4>Results:</h4>
+                            <div class="results-grid">
+                                <div class="result">
+                                    <span class="result__number">75%</span>
+                                    <span class="result__label">Downtime Reduction</span>
+                                </div>
+                                <div class="result">
+                                    <span class="result__number">$4.5M</span>
+                                    <span class="result__label">Annual Savings</span>
+                                </div>
+                                <div class="result">
+                                    <span class="result__number">90%</span>
+                                    <span class="result__label">Prediction Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-btn--prev" id="prev-btn">‹</button>
+                    <div class="carousel-dots" id="carousel-dots"></div>
+                    <button class="carousel-btn carousel-btn--next" id="next-btn">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h2 class="section__title">Ready to Transform Your Business?</h2>
+                        <p class="contact__description">
+                            Get your free AI strategy consultation and discover how you can achieve 300% ROI in 90 days.
+                        </p>
+                        
+                        <div class="contact__benefits">
+                            <div class="contact__benefit">
+                                <div class="contact__benefit-icon">✓</div>
+                                <span>Free 30-minute strategy session</span>
+                            </div>
+                            <div class="contact__benefit">
+                                <div class="contact__benefit-icon">✓</div>
+                                <span>Custom AI readiness assessment</span>
+                            </div>
+                            <div class="contact__benefit">
+                                <div class="contact__benefit-icon">✓</div>
+                                <span>ROI projection for your use case</span>
+                            </div>
+                            <div class="contact__benefit">
+                                <div class="contact__benefit-icon">✓</div>
+                                <span>No obligation, no sales pressure</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <strong>Email:</strong> hello@adisam-consulting.com
+                            </div>
+                            <div class="contact__detail">
+                                <strong>Phone:</strong> +1 (555) 123-4567
+                            </div>
+                            <div class="contact__detail">
+                                <strong>Response Time:</strong> Within 24 hours
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form-container">
+                        <form class="contact__form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Business Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company Name *</label>
+                                <input type="text" id="company" name="company" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="role" class="form-label">Your Role *</label>
+                                <select id="role" name="role" class="form-select" required>
+                                    <option value="">Select your role</option>
+                                    <option value="ceo">CEO/Founder</option>
+                                    <option value="cto">CTO/Technical Leader</option>
+                                    <option value="coo">COO/Operations</option>
+                                    <option value="director">Director/VP</option>
+                                    <option value="manager">Manager</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company-size" class="form-label">Company Size</label>
+                                <select id="company-size" name="company-size" class="form-select">
+                                    <option value="">Select company size</option>
+                                    <option value="startup">Startup (1-10 employees)</option>
+                                    <option value="small">Small (11-50 employees)</option>
+                                    <option value="medium">Medium (51-200 employees)</option>
+                                    <option value="large">Large (201-1000 employees)</option>
+                                    <option value="enterprise">Enterprise (1000+ employees)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="ai-experience" class="form-label">Current AI Experience</label>
+                                <select id="ai-experience" name="ai-experience" class="form-select">
+                                    <option value="">Select experience level</option>
+                                    <option value="none">No AI experience</option>
+                                    <option value="exploring">Exploring AI options</option>
+                                    <option value="pilot">Running pilot projects</option>
+                                    <option value="implementing">Currently implementing</option>
+                                    <option value="scaling">Scaling existing AI</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Tell us about your AI goals</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="What business challenges are you looking to solve with AI?"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--large btn--full">
+                                Get My Free AI Strategy Session
+                                <span class="btn__icon">→</span>
+                            </button>
+                            
+                            <p class="form-disclaimer">
+                                By submitting this form, you agree to receive communications from AdiSam Consulting. 
+                                We respect your privacy and will never share your information.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="logo-text">AdiSam</span>
+                        <span class="logo-accent">Consulting</span>
+                    </div>
+                    <p class="footer__tagline">
+                        Transforming businesses with AI that delivers real results in 90 days.
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="#services" class="footer__link">AI Strategy</a></li>
+                            <li><a href="#services" class="footer__link">Implementation</a></li>
+                            <li><a href="#services" class="footer__link">ROI Optimization</a></li>
+                            <li><a href="#services" class="footer__link">Team Training</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__list">
+                            <li><a href="#about" class="footer__link">About Us</a></li>
+                            <li><a href="#case-studies" class="footer__link">Case Studies</a></li>
+                            <li><a href="#contact" class="footer__link">Contact</a></li>
+                            <li><a href="#" class="footer__link">Careers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Resources</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">AI Readiness Guide</a></li>
+                            <li><a href="#" class="footer__link">ROI Calculator</a></li>
+                            <li><a href="#" class="footer__link">Industry Reports</a></li>
+                            <li><a href="#" class="footer__link">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Connect</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">LinkedIn</a></li>
+                            <li><a href="#" class="footer__link">Twitter</a></li>
+                            <li><a href="#" class="footer__link">Newsletter</a></li>
+                            <li><a href="mailto:hello@adisam-consulting.com" class="footer__link">Email Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>&copy; 2024 AdiSam Consulting. All rights reserved.</p>
+                </div>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Privacy Policy</a>
+                    <a href="#" class="footer__legal-link">Terms of Service</a>
+                    <a href="#" class="footer__legal-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
