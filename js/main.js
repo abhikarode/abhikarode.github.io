@@ -121,14 +121,37 @@ class Carousel {
         this.container = container;
         this.cards = container.querySelectorAll('.case-study-card');
         this.currentIndex = 0;
-        this.cardWidth = 400; // Width of each card + gap
         this.init();
     }
     
     init() {
+        // Add class to indicate JS carousel is active
+        document.body.classList.add('js-carousel-active');
+        
         this.createDots();
         this.updateCarousel();
         this.bindEvents();
+        this.setCardWidth();
+    }
+    
+    setCardWidth() {
+        // Calculate card width based on container and viewport
+        const containerWidth = this.container.parentElement.offsetWidth;
+        const gap = 24; // 1.5rem gap
+        
+        if (window.innerWidth >= 1024) {
+            this.cardWidth = 400; // Desktop: show partial next card
+        } else if (window.innerWidth >= 768) {
+            this.cardWidth = containerWidth - 100; // Tablet: almost full width
+        } else {
+            this.cardWidth = containerWidth - 40; // Mobile: full width with padding
+        }
+        
+        // Set card widths
+        this.cards.forEach(card => {
+            card.style.minWidth = `${this.cardWidth}px`;
+            card.style.maxWidth = `${this.cardWidth}px`;
+        });
     }
     
     createDots() {
@@ -144,7 +167,8 @@ class Carousel {
     }
     
     updateCarousel() {
-        const translateX = -this.currentIndex * (this.cardWidth + 24); // 24px gap
+        const gap = 24; // 1.5rem gap
+        const translateX = -this.currentIndex * (this.cardWidth + gap);
         this.container.style.transform = `translateX(${translateX}px)`;
         
         // Update dots
@@ -178,10 +202,10 @@ class Carousel {
             prevBtn.addEventListener('click', () => this.prev());
         }
         
-        // Auto-play carousel
+        // Auto-play carousel (optional - can be disabled)
         setInterval(() => {
             this.next();
-        }, 5000);
+        }, 8000); // Increased to 8 seconds for better UX
         
         // Touch/swipe support for mobile
         let startX = 0;
@@ -203,12 +227,21 @@ class Carousel {
                 }
             }
         });
+        
+        // Resize handler
+        window.addEventListener('resize', () => {
+            this.setCardWidth();
+            this.updateCarousel();
+        });
     }
 }
 
 // Initialize carousel
 if (carouselContainer) {
+    console.log('Initializing carousel with', carouselContainer.querySelectorAll('.case-study-card').length, 'cards');
     new Carousel(carouselContainer);
+} else {
+    console.error('Carousel container not found');
 }
 
 // ===== FORM HANDLING =====

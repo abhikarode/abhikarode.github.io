@@ -807,23 +807,56 @@ a:hover {
   background: var(--bg-light);
 }
 
+/* Carousel container with fallback scrolling */
 .case-studies__carousel {
   display: flex;
   gap: var(--space-xl);
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   padding-bottom: var(--space-md);
   margin-bottom: var(--space-2xl);
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) var(--bg-light);
+}
+
+/* Hide scrollbar for webkit browsers */
+.case-studies__carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.case-studies__carousel::-webkit-scrollbar-track {
+  background: var(--bg-light);
+  border-radius: 3px;
+}
+
+.case-studies__carousel::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 3px;
+}
+
+.case-studies__carousel::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* When JavaScript is active, hide scrollbar and use transform */
+.js-carousel-active .case-studies__carousel {
+  overflow: hidden;
 }
 
 .case-study-card {
-  flex: 0 0 400px;
+  flex: 0 0 auto;
   background: white;
   padding: var(--space-2xl);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-light);
   scroll-snap-align: start;
   transition: var(--transition);
+  width: 400px;
+  max-width: 400px;
 }
 
 .case-study-card:hover {
@@ -1247,10 +1280,12 @@ a:hover {
   
   .case-studies__carousel {
     padding: 0 var(--space-md);
+    overflow: hidden;
   }
   
   .case-study-card {
-    flex: 0 0 300px;
+    width: 300px;
+    max-width: 300px;
   }
   
   .results-grid {
@@ -1292,7 +1327,8 @@ a:hover {
   }
   
   .case-study-card {
-    flex: 0 0 280px;
+    width: 280px;
+    max-width: 280px;
   }
   
   .about__stats {
