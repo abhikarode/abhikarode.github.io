@@ -1,0 +1,6 @@
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50%" y="50%" font-family="Arial" font-size="36" fill="#666" text-anchor="middle" dominant-baseline="middle">AWS Video Thumbnail</text>
+  <rect x="540" y="310" width="200" height="100" rx="20" fill="#FF9900" opacity="0.7"/>
+  <polygon points="600,335 600,385 650,360" fill="white"/>
+</svg>

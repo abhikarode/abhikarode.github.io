@@ -1,0 +1,3 @@
+# This is a placeholder for the video thumbnail image
+# In a real implementation, you would place an actual image file here
+# For now, this serves as a fallback when YouTube thumbnails fail to load
